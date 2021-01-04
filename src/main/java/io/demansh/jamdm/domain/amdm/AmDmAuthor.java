@@ -58,11 +58,12 @@ public class AmDmAuthor implements Author {
             Elements htmlElements = html.select("table.tablesorter")
                     .get(0).children()
                     .get(1).children();
+            Author cachedAuthor = new AmDmAuthor(this.pathName, this.name());
             ArrayList<Song> result = new ArrayList<>();
             htmlElements.forEach(htmlElement -> {
                         Element songElement = htmlElement
                                 .children().get(0).children().get(0);
-                        result.add(new AmDmSong(songElement, this));
+                        result.add(new AmDmSong(songElement, cachedAuthor));
                     }
             );
             return result;

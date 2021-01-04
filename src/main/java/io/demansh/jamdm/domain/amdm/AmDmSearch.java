@@ -5,7 +5,6 @@ import io.demansh.jamdm.domain.Search;
 import io.demansh.jamdm.domain.Song;
 import org.jsoup.Jsoup;
 import org.jsoup.nodes.Document;
-import org.jsoup.nodes.Element;
 import org.jsoup.select.Elements;
 
 import java.io.IOException;
