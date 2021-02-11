@@ -1,7 +1,7 @@
-package io.demansh.jamdm.domain.amdm;
+package com.github.demansh.jamdm.amdm;
 
-import io.demansh.jamdm.domain.Author;
-import io.demansh.jamdm.domain.Song;
+import com.github.demansh.jamdm.Author;
+import com.github.demansh.jamdm.Song;
 import org.jsoup.Jsoup;
 import org.jsoup.nodes.Document;
 import org.jsoup.nodes.Element;

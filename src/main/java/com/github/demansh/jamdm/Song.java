@@ -1,4 +1,4 @@
-package io.demansh.jamdm.domain;
+package com.github.demansh.jamdm;
 
 public interface Song {
     String id();

@@ -1,7 +1,7 @@
-package io.demansh.jamdm.domain;
+package com.github.demansh.jamdm;
 
-import io.demansh.jamdm.domain.amdm.AmDmSearch;
-import io.demansh.jamdm.domain.amdm.AmDmSong;
+import com.github.demansh.jamdm.amdm.AmDmSong;
+import com.github.demansh.jamdm.amdm.AmDmSearch;
 import org.junit.Before;
 import org.junit.Test;
 

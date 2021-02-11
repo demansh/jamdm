@@ -1,6 +1,6 @@
-package io.demansh.jamdm.domain;
+package com.github.demansh.jamdm;
 
-import io.demansh.jamdm.domain.amdm.AmDmSearch;
+import com.github.demansh.jamdm.amdm.AmDmSearch;
 import org.junit.Test;
 
 import java.util.Collection;
