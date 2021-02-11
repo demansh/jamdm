@@ -9,7 +9,7 @@ guitar chords.
 
 Say you'd like to find chord for the Beatles "Yellow sub-marin":
 
-````java
+```java
 Search search=new AmDmSearch("Yellow submarine");
 Collection<Song> songs=search.result();
 System.out.println(songs.iterator().next().text());
