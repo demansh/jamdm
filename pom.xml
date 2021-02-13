@@ -3,7 +3,7 @@
     <modelVersion>4.0.0</modelVersion>
     <groupId>com.github.demansh</groupId>
     <artifactId>jamdm</artifactId>
-    <version>0.0.12-SNAPSHOT</version>
+    <version>0.0.13-SNAPSHOT</version>
     <name>${project.groupId}:${project.artifactId}</name>
     <description>This is a java library to grab data from the amdm.ru site - a
         storage of guitar chords
@@ -126,7 +126,7 @@
                             <autoVersionSubmodules>true</autoVersionSubmodules>
                             <useReleaseProfile>false</useReleaseProfile>
                             <releaseProfiles>release</releaseProfiles>
-                            <goals>deploy nexus-staging:release</goals>
+<!--                            <goals>deploy nexus-staging:release</goals>-->
                         </configuration>
                     </plugin>
                 </plugins>

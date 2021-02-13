@@ -30,6 +30,6 @@ mvn clean install
 Perform release from scm
 
 ```shell
-mvn release:clean release:prepare
-mvn release:perform
+mvn release:clean release:prepare -P release
+mvn release:perform -P release
 ```
