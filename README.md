@@ -29,6 +29,7 @@ mvn clean install
 
 Perform release from scm
 
+Commit changes and then execute:
 ```shell
 mvn release:clean release:prepare -P release
 mvn release:perform -P release

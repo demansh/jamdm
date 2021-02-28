@@ -45,8 +45,9 @@ public class AmDmSearch implements Search {
                 result.add(song);
             });
             return result;
-        } catch (IOException e) {
-            e.printStackTrace();
+        } catch (IOException | IndexOutOfBoundsException e) {
+            //todo: add proper error handling -
+            // logging facade or throw custom exceptions
             return null;
         }
     }

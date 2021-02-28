@@ -67,8 +67,9 @@ public class AmDmAuthor implements Author {
                     }
             );
             return result;
-        } catch (IOException e) {
-            e.printStackTrace();
+        } catch (IOException | IndexOutOfBoundsException e) {
+            //todo: add proper error handling -
+            // logging facade or throw custom exceptions
             return new ArrayList<>();
         }
     }

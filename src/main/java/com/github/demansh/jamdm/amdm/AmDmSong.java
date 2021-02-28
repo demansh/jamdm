@@ -81,8 +81,9 @@ public class AmDmSong implements Song {
         try {
             Document html = Jsoup.connect(url).get();
             return html.select("pre").get(0).toString();
-        } catch (IOException e) {
-            e.printStackTrace();
+        } catch (IOException | IndexOutOfBoundsException e) {
+            //todo: add proper error handling -
+            // logging facade or throw custom exceptions
             return "";
         }
     }
