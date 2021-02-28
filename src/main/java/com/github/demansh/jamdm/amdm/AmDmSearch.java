@@ -10,6 +10,7 @@ import org.jsoup.select.Elements;
 import java.io.IOException;
 import java.util.ArrayList;
 import java.util.Collection;
+import java.util.Collections;
 
 public class AmDmSearch implements Search {
     private final String query;
@@ -26,6 +27,9 @@ public class AmDmSearch implements Search {
 
     @Override
     public Collection<Song> result() {
+        if (query.isEmpty()) {
+            return Collections.EMPTY_LIST;
+        }
         try {
             String url = String.format("https://amdm.ru/search/%s/?q=%s",
                     page,
